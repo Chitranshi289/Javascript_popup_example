@@ -1,44 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>OUTPUT BORDERS</title>
-  </head>
-  <body>
-    <h3>Basic input box with outer shadow</h3>
-    <div class="a">
-      <div class="box_a">DD- Design Drastic</div>
-      <div class="box_b">DD- Design Drastic</div>
-      <div class="box_c">DD- Design Drastic</div>
-    </div>
-    <h3 style="margin-top: -10px">Basic input box with inner shadow</h3>
-    <div class="b">
-      <div class="box_d">DD- Design Drastic</div>
-      <div class="box_e">DD- Design Drastic</div>
-      <div class="box_f">DD- Design Drastic</div>
-    </div>
-    <h3> Spread shadow on focus</h3>
-    <div class="c">
-      <div class="box_g">DD- Design Drastic</div>
-      <div class="box_h">DD- Design Drastic</div>
-      <div class="box_i">DD- Design Drastic</div>
-    </div>
-    <h3 style="margin-top: -1%">Border bottom effects</h3>
-    <div class="flex-container">
-      <div class="box_j">DD- Design Drastic</div>
-      <div class="box_k">DD- Design Drastic</div>
-      <div class="box_l">DD- Design Drastic</div>
-      <div class="box_l">DD- Design Drastic</div>
-    </div>
-    <h3>Border animations</h3>
-    <div class="container">
-      <div class="box_j">DD- Design Drastic</div>
-      <div class="box_k">DD- Design Drastic</div>
-      <div class="box_l">DD- Design Drastic</div>
-      <div class="box_l">DD- Design Drastic</div>
-    </div>
-  </body>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>css_form</title>
+    </head>
+    <body>
+        <h1>Custom Alert</h1>
+        <form>
+            <h4>Name</h4>
+            <input type="text" placeholder="Enter your name">
+            <h4>Age</h4>
+            <input type="number" placeholder="Enter your age">
+            <h4>Email</h4>
+            <input type="email" placeholder="Enter your email">
+            <br>
+             <button type="submit">Submit</button>
+        </form>
+        
+        <img src="D:\TATA\5oct\p.png" style="height: 100%; width:110px; padding-left:13%; margin-top:3%">
+       
+        <div class="alert success">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <h5>Your registration was successfully!</h5>
+          </div>
+          <div class="alert warning">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <h5>The field is not correct!</h5>
+          </div>
+          <div class="alert info">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <h5>You need to fill out all the fields!</h5>
+          </div>
+          <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <h5>You need to fill out all the fields!</h5>
+          </div>
+    </body>
 </html>
