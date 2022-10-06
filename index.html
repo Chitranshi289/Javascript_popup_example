@@ -6,109 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-    .h2{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-</style>
 
-<body >
-    <h1>PROJECT 22 (1)</h1>
+<body bgcolor="pink">
+    <h1> Project 23 :- Flowchart Output Using While & For Loop :</h1>
+    <h2> While Loop</h2>
     
-<h2><font color>Area of a Triangle</font></h2>
-<p id ="side1">  </p>
-<p id="side2">></p>
-<p id="side3"></p>
-
-
-<p id="demo"> Area of triangle for the given side lenght</p>
-<h1>PROJECT22 (2)</h1>
-
 <script>
-var side1=parseInt("5");
-var side2=parseInt("6");
-var side3=parseInt("7");
-var Area = (side1 + side2 + side3) / 2;
-document.getElementById("side1").innerHTML = "SIDE 1 :"+ side1;
-document.getElementById("side2").innerHTML= "SIDE2 : "+  side2;
-document.getElementById("side3").innerHTML="SIDE3 : " + side3;
 
-document.getElementById("demo").innerHTML = "Area of the Triangle for the given Input is  : "+ Area;
-console.log("SIDE 1 :")
-console.log(side1);
-console.log("SIDE 2 :")
-console.log(side2);
-console.log("SIDE 3 :")
-console.log(side3);
-console.log("Area :")
-console.log(Area);
+var count= parseInt(prompt("ENTER VALUE OF COUNT"));
 
+while (count <= 5) {
+
+    document.write(count+"<br>");
+    count += 1;
+    console.log(count);
+   
+}
 
 </script>
+<h1>Fors Loop :</h1>
+<script>
 
+var count1= parseInt(prompt("ENTER VALUE OF COUNT1"));
+for (count1=0;count1<=5;count1++){
+document.writeln(count1+"<br>");
+console.log(count1);
+}
+
+// display the sum
+
+</script>
 </body>
 </html>
-
-
-<html>
-  
-<head>
-    <title></title>
-</head>
-  
-<body style="text-align: center;">
-    <h1 style="color:blueviolet;">File extension</h1>
-    <form>
-        <input type="file" id="file1" />
-        <input type="button" value="Check Extension" 
-                             onclick="checkFileExtension();"/>
-    </form>
-    <p style="color:blueviolet"> The file extension is: <span class="output"></span></p>
-    <script language="javascript">
-        function checkFileExtension() {
-            fileName = document.querySelector('#file1').value;
-            extension = fileName.split('.').pop();
-            document.querySelector('.output')
-                                     .textContent = extension;
-        };
-       
-    </script>
-</body>
-  
-</html>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <h1>PROJECT 22 (3)</h1>
-   <h2> Sum of two numbers ( Depending on are the number same or not )</h2>
-   <h2>Values are given at Console</h2>
-   <h3>Open Console for the output</h3>
-   
-    <script>
-        function sumTriple (x, y) {
-  if (x == y) {
-    return 3 * (x + y);
-    } 
-   else
-   {
-    return (x + y);
-   }
- }
- console.log("first set of values are 10 & 30 :")
-console.log(sumTriple(10,30));
-console.log("first set of values are 10 & 10 :")
-
-console.log(sumTriple(10,10));
-
-
-    </script>
-    
-</body>
-</html>
-
